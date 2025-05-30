@@ -5,8 +5,19 @@
     box-sizing: border-box;
 }
 
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+/* Main container  */
+
 .main-container{
-    height: 100vh;
+    height: auto;
+    width: 100vw;
     font-weight: 300;
     font-size: 16px;
     background: #a39633;
@@ -14,10 +25,35 @@
     color: white;
 }
 
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+    .main-container {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    .main-container {
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media (min-width: 900px) {
+    .main-container {
+        font-size: 16px;
+    }
+}
+
+
+/* header  */
+
 
 header{
     min-height: 70px;
-    width: 100vw;
 }
 
 nav{
@@ -28,15 +64,21 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 0 20px;
+    padding: 0 15px 0 15px;
     width: auto;
     height: 65px;
-    
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+nav h2{
+    cursor: pointer;
 }
 
 nav ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     gap: 80px;
     list-style-type: none;
 }
@@ -50,12 +92,34 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px){
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    nav ul li a{ 
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    nav h2{
+        display: none;
+    }
+}
+
+
+
 .Js-chapters{
-    height: 380px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
     padding-top: 20px;
 }
 
@@ -69,4 +133,14 @@ nav ul li a:hover{
     color: black;
     font-size: 20px;
     transition: all 0.2s ease-in;
+}
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px){
+    .Js-chapters{
+        font-size: 16px;
+        font-weight: 700;
+        align-items: center;
+        gap: 30px;
+    }
 }
