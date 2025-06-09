@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    font-weight: 300;
+    font-size: 16px;
+    background: #a39633;
+    background: linear-gradient(355deg, rgba(163, 150, 51, 1) 31%, rgba(237, 221, 83, 1) 100%);
+    color: white;
+}
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+    .main-container {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    .main-container {
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media (min-width: 900px) {
+    .main-container {
+        font-size: 16px;
+    }
+}
+
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 150px;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
